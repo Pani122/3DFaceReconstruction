@@ -29,7 +29,7 @@ cd ..
 ```
 Here we are using images of size 192x192x3 because while training the model we are going to resize the image to 192x192 if the size is not matched,so the output produced from the network is 192x192x200.The output of the 3DDFA model is stored in a numpy matrix of size matching the 192x192x200.
 
-4.Training VRN
+4. Training VRN
 ```shell script
 python3 train.py
 python3 demo.py
