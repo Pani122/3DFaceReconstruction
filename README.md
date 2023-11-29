@@ -13,6 +13,14 @@ Example of input and output
    
 ```shell script
 git clone https://github.com/Pani122/3DFaceReconstruction
+```
+2. Download the required data set into Dataset folder
+```shell script
+python3 cropper.py
+python3 reaper.py
+```
+Cropper.py converts the image size to 192x192 using Facial alignment network after detecting the faces present in the respective image.
+```shell script
 cd 3DDFA_V2_modified
 ```
 
