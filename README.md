@@ -46,8 +46,8 @@ python3 reaper.py
 ```shell script
 python3 train.py
 ```
-For training we have used crossentropy loss as the loss function and used RMSProp as an optimizer.We have used facial alignment network([FAN]
-(https://github.com/1adrianb/face-alignment)) inorder to resize the input image to 192x192,then we have passed it to VRN model.
+For training we have used crossentropy loss as the loss function and used RMSProp as an optimizer.We have used facial alignment network[FAN]
+(https://github.com/1adrianb/face-alignment) inorder to resize the input image to 192x192,then we have passed it to VRN model.
 
 7. Checking VRN
 ```shell script
