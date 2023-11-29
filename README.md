@@ -5,8 +5,6 @@ which is CNN regression based model.We have implemented our model based on VRN u
 
 Dataset is abstracted from [300W-3D](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm),We have only used input images but for the outputs we need to generate them customly using [3DDFA_V2](https://github.com/cleardusk/3DDFA_V2) through some slight modifications.
 
-Example of input and output
-
 ### Usage
 
 1. Clone this repo
