@@ -21,12 +21,16 @@ cd 3DDFA_V2_modified
 sh ./build.sh
 ```
 
-3. Generating dataset and training
-
+3. Generating dataset 
 ```shell script
 # Make sure all the input files in the input folder and input images are of size 192x192x3
 python3 generator.py 
 cd ..
+```
+Here we are using images of size 192x192x3 because while training the network we are going to resize the image to 192x192 if the size is not matched,so the output produced from the network is 192x192x200.
+
+4.Training VRN
+```shell script
 python3 train.py
 python3 demo.py
 ```
