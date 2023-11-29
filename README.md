@@ -27,13 +27,14 @@ sh ./build.sh
 python3 generator.py 
 cd ..
 ```
-Here we are using images of size 192x192x3 because while training the network we are going to resize the image to 192x192 if the size is not matched,so the output produced from the network is 192x192x200.
+Here we are using images of size 192x192x3 because while training the model we are going to resize the image to 192x192 if the size is not matched,so the output produced from the network is 192x192x200.The output of the 3DDFA model is stored in a numpy matrix of size matching the 192x192x200.
 
 4.Training VRN
 ```shell script
 python3 train.py
 python3 demo.py
 ```
+For training we have used crossentropy loss as the loss function and used RMSProp as an optimizer.We have used facial alignment network([FAN](https://github.com/1adrianb/face-alignment)] inorder to resize the input image to 192x192,then we have passed it to VRN model.
 <!-- Obviously, the eyes parts are not good. 
 The implementation of tracking is simply by alignment. If the head pose > 90° or the motion is too fast, the alignment may fail. A threshold is used to trickly check the tracking state, but it is unstable.
 
