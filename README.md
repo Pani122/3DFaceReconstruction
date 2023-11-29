@@ -34,7 +34,7 @@ Here we are using images of size 192x192x3 because while training the model we a
 python3 train.py
 python3 demo.py
 ```
-For training we have used crossentropy loss as the loss function and used RMSProp as an optimizer.We have used facial alignment network([FAN](https://github.com/1adrianb/face-alignment)] inorder to resize the input image to 192x192,then we have passed it to VRN model.
+For training we have used crossentropy loss as the loss function and used RMSProp as an optimizer.We have used facial alignment network([FAN](https://github.com/1adrianb/face-alignment)) inorder to resize the input image to 192x192,then we have passed it to VRN model.
 <!-- Obviously, the eyes parts are not good. 
 The implementation of tracking is simply by alignment. If the head pose > 90° or the motion is too fast, the alignment may fail. A threshold is used to trickly check the tracking state, but it is unstable.
 
