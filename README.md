@@ -24,7 +24,7 @@ sh ./build.sh
 3. Generating dataset and training
 
 ```shell script
-# Make sure all the input files in the input folder
+# Make sure all the input files in the input folder and input images are of size 192x192x3
 python3 generator.py 
 cd ..
 python3 train.py
